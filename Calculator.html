@@ -2,51 +2,243 @@
 <html>
   <head>
     <title>Calculator</title>
+    <style>
+      .body {
+        background-color: black;
+      }
+      .b1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: grey;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .b2 {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: grey;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold; 
+      }
+      .b3 {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: grey;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .plus {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: orange;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .b4 {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: grey;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .b5 {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: grey;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .b6 {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: grey;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .minus {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: orange;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .b7 {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: grey;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .b8 {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: grey;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .b9 {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: grey;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .multiply {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: orange;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .b0 {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: grey;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .dot {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: grey;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .eval {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: grey;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .divide {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: orange;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .clear {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: grey;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+      }
+    </style>
   </head>
-  <body>
+  <body class="body">
     <p class="js-calculation"></p>
 
     <p>
-      <button onclick = "updateCalculation ('1')">1</button>
+      <button onclick = "updateCalculation ('1')" class="b1">1</button>
 
-      <button onclick = "updateCalculation ('2')">2</button>
+      <button onclick = "updateCalculation ('2')" class="b2">2</button>
 
-      <button onclick = "updateCalculation ('3')">3</button>
+      <button onclick = "updateCalculation ('3')" class="b3">3</button>
 
-      <button onclick = "updateCalculation (' + ')">+</button>
+      <button onclick = "updateCalculation (' + ')" class="plus">+</button>
     </p>
 
     <p>
-      <button onclick = "updateCalculation ('4')">4</button>
+      <button onclick = "updateCalculation ('4')" class="b4">4</button>
 
-      <button onclick = "updateCalculation ('5')">5</button>
+      <button onclick = "updateCalculation ('5')" class="b5">5</button>
 
-      <button onclick = "updateCalculation ('6')">6</button>
+      <button onclick = "updateCalculation ('6')" class="b6">6</button>
 
-      <button onclick = "updateCalculation (' - ')">-</button>
+      <button onclick = "updateCalculation (' - ')" class="minus">-</button>
     </p>
 
     <p>
-      <button onclick = "updateCalculation ('7')">7</button>
+      <button onclick = "updateCalculation ('7')" class="b7">7</button>
 
-      <button onclick = "updateCalculation ('8')">8</button>
+      <button onclick = "updateCalculation ('8')" class="b8">8</button>
 
-      <button onclick = "updateCalculation ('9')">9</button>
+      <button onclick = "updateCalculation ('9')" class="b9">9</button>
 
-      <button onclick = "updateCalculation (' * ')">*</button>
+      <button onclick = "updateCalculation (' * ')" class="multiply">*</button>
     </p>
 
     <p>
-      <button onclick = "updateCalculation ('0')">0</button>
+      <button onclick = "updateCalculation ('0')" class="b0">0</button>
 
-      <button onclick = "updateCalculation ('.')">.</button>
+      <button onclick = "updateCalculation ('.')" class="dot">.</button>
 
       <button onclick = "calculation = eval(calculation);
       displayCalculation();
       localStorage.setItem('calculation', calculation);
-      ">=</button>
+      " class="eval">=</button>
 
-      <button onclick = "updateCalculation (' / ')">/</button>
+      <button onclick = "updateCalculation (' / ')" class="divide">/</button>
     </p>
     
     <p>
@@ -54,7 +246,7 @@
       <button onclick = "calculation = '';
       displayCalculation();
       localStorage.setItem('calculation', calculation);
-      ">Clear</button>
+      " class="clear">Clear</button>
 
     </p>
     
